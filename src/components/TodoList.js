@@ -3,7 +3,7 @@ import TodoListItem from './TodoListItem';
 
 class TodoList extends Component {
   render() {
-    const { tab, data, handleToggleTodo, handleRemoveTodo } = this.props;
+    const { tab, data, handleToggleTodo, handleRemoveTodo, handleEditTodo } = this.props;
     let list = data;
     if (tab === 'completed') {
       list = data.filter(({status}) => !status);
@@ -17,6 +17,8 @@ class TodoList extends Component {
           data={item}
           handleToggleTodo={() => { handleToggleTodo(index) }}
           handleRemoveTodo={() => { handleRemoveTodo(index) }}
+          handleEditTodo={handleEditTodo}
+          index={index}
         />
       );
     });
