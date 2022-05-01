@@ -5,7 +5,7 @@
 
 ## Demo
 
-Here is a working live demo : https://saveyourtime.github.io/todo-list/dist/
+Here is a working live demo : https://saveyourtime.github.io/react-todo-list/dist/
 
 ## Technologies
 
